@@ -1,0 +1,7 @@
+{
+  "name": "ionFlicker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
