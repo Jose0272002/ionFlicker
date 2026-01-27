@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{ videoRecibido.title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrar()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" class="ion-padding">
+  <div class="video-container">
+    <video controls autoplay name="media" style="width: 100%;">
+      <source [src]="videoRecibido.url" type="video/mp4">
+    </video>
+  </div>
+</ion-content>

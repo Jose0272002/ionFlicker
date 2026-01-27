@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Search
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Buscar videos..." (ionInput)="filterVideos($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item button *ngFor="let video of filteredVideos" (click)="reproducir(video)">
+      <ion-thumbnail slot="start">
+        <img [src]="video.thumb" [alt]="video.title">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{ video.title }}</h3>
+        <p>{{ video.category.join(', ') }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

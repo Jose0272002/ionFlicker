@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="large">Flicker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row style="flex-wrap: nowrap; overflow-x: auto;">
+      <ion-col *ngFor="let canal of canales">
+        <ion-card class="video-card" (click)="reproducirCanal(canal)">
+        <ion-card-content>
+          <ion-icon name="tv-outline" size="large"></ion-icon>
+          <h2>{{ canal.name }}</h2>
+        </ion-card-content>
+      </ion-card>
+      </ion-col>
+    </ion-row>
+    <div *ngFor="let group of myVideos">
+      <ion-row>
+        <ion-col>
+          <h3>{{ group.category }}</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row style="flex-wrap: nowrap; overflow-x: auto;">
+        <ion-col size="5" size-md="4" size-lg="3" *ngFor="let video of group.videos">
+          <ion-card class="video-card" (click)="reproducir(video)">
+            <img [src]="video.thumb" alt="thumbnail">
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>
