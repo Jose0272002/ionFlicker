@@ -35,5 +35,5 @@ Performance Optimization: Implementing lazy loading for modules to improve initi
 📸 Screenshots
 | Home | Search |
 | :---: | :---: |
-| <img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/93b1d13f-2161-4ede-b297-41ee2e36a4c5" /> | <img width="720" height="1640" alt="image" src="https://github.com/user-attachments/assets/aa9a6ac5-33de-4c42-9032-56fce8817dcd" />
+| <img width="72" height="164" alt="image" src="https://github.com/user-attachments/assets/93b1d13f-2161-4ede-b297-41ee2e36a4c5" /> | <img width="72" height="164" alt="image" src="https://github.com/user-attachments/assets/aa9a6ac5-33de-4c42-9032-56fce8817dcd" />
  |
